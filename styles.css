@@ -113,8 +113,8 @@
     /* padding-left: 0px; */
   }
 
-  .navbar > * {
-    /* border: 1px solid blue; */
+  .navbar > .search-section + .profile-section {
+    border: 1px solid blue;
   }
 
   .navbar .search-section .user img {
@@ -177,6 +177,7 @@
     grid-auto-flow: column;
     align-items: center;
     column-gap: 3px;
+    /* align-content: center; */
     /* padding-right: 40px; */
   }
 
@@ -187,12 +188,13 @@
 
   .user .user_icon {
     display: grid;
-    justify-self: stretch;
+    
     align-self: center;
     justify-self: center;
 
+
     height: 80%;
-    width: 90%;
+    width: 80%;
 
     align-items: center;
     justify-items: center;
@@ -209,14 +211,58 @@
     grid-template-columns: repeat(2,1fr);
   }
 
+  
 
-
-  .navbar .user-interact {
+  .profile-section .profile-interact {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  .profile-interact .user-icon {
+    display: grid;
+    background-color: #facc15;
+    height: 80px;
+    width: 80px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+
+  .user-icon img {
+    max-height: 80%;
+    max-width: 80%;
+  }
+
+  .profile-interact .user-desc {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .user-desc > p:first-child {
+    font-size: 14px;
+  }
+
+  .navbar .profile-section .user-interact {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     align-items: center;
     justify-content: end;
+    align-content: center;
     justify-items: center;
+  }
+
+  .user-interact button {
+    background-color: #1992d4;
+    min-width: 100px;
+    padding: 5px 0px;
+    font-family: "Roboto";
+    color: white;
+    font-weight: 500;
+    border: 1px solid #1992d4;
+    border-radius: 20px;
   }
 
 
