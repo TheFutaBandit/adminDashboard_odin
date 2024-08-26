@@ -30,7 +30,7 @@
     height: 100%;
   }
 
-  .sidebar, .navbar, .main-body {
+  .main-body {
     border: 1px solid red;
   }
 
@@ -106,15 +106,17 @@
 
   .navbar {
     grid-area: 1 / 2 / 2 / 3;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 50px 1fr 80px;
     grid-template-rows: 1fr 2fr;
     /* padding-left: 0px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .navbar > .search-section + .profile-section {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
 
   .navbar .search-section .user img {
@@ -202,6 +204,11 @@
     background-color: #facc15;
   }
 
+  .user_icon img {
+    min-height: 60%;
+    min-width: 60%;
+  }
+
 
 
   .navbar .profile-section {
@@ -224,7 +231,7 @@
   .profile-interact .user-icon {
     display: grid;
     background-color: #facc15;
-    height: 80px;
+    height: 70px;
     width: 80px;
     justify-items: center;
     align-items: center;
@@ -252,17 +259,21 @@
     justify-content: end;
     align-content: center;
     justify-items: center;
+    column-gap: 28px;
+    /* padding-right: 10px; */
   }
 
   .user-interact button {
     background-color: #1992d4;
-    min-width: 100px;
-    padding: 5px 0px;
+    min-width: 90px;
+    padding: 7px 0px;
     font-family: "Roboto";
     color: white;
     font-weight: 500;
     border: 1px solid #1992d4;
     border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
   }
 
 
