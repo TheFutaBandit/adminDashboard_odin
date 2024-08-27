@@ -30,9 +30,7 @@
     height: 100%;
   }
 
-  .main-body {
-    border: 1px solid red;
-  }
+  
 
   .container {
     display: grid;
@@ -114,10 +112,6 @@
     /* padding-left: 0px; */
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-
-  .navbar > .search-section + .profile-section {
-    /* border: 1px solid blue; */
   }
 
   .navbar .search-section .user img {
